@@ -1,10 +1,3 @@
-// phone
-$(document).ready(function () {
-    $('#toggle').click(function () {
-        $('.navbar').slideToggle()
-    })
-})
-
 // slick slider
 $(document).ready(function () {
     $('.banner').slick({
@@ -74,26 +67,48 @@ $(document).ready(function () {
             $('header').addClass('menu-scroll');
             if (reSize > 520)
                 $('.navbar a').css('color', '#000')
-            else 
-                $('.navbar a').css('color', '#000')
 
             $('#toggle').css('color', '#000')
         }
         else {
             $('header').removeClass('menu-scroll');
             $('#toggle').css('color', '#fff')
-            if(reSize > 520)
+            if (reSize > 520)
                 $('.navbar a').css('color', '#fff')
-            else 
+            else
                 $('.navbar a').css('color', '#000')
 
         }
     })
 })
 
+// phone
+$(document).ready(function () {
+    $('#toggle').click(function () {
+        $('.navbar').slideToggle()
+        
+    })
+})
+
+$(document).ready(function() {
+    $('#toggle').click(function() {
+        if(document.getElementById('menu').value != 0) {
+            $('header').addClass('menu-scroll');
+            $('#toggle').css('color', '#000')
+            $('.navbar a').css('color', '#000')
+            $('#menu').value = '1'
+        }else {
+            $('header').removeClass('menu-scroll');
+            $('#toggle').css('color', '#fff')
+            $('.navbar a').css('color', '#fff')
+            $('#menu').value = '0'
+        }
+    })
+})
+
 function click(reSize) {
     $(document).ready(function () {
-        if (reSize <= 1024) {
+        if (reSize <= 520) {
             $('.navbar li').click(function () {
                 document.getElementById('navbar').style.display = 'none'
             })
@@ -105,13 +120,25 @@ function click(reSize) {
         }
     })
 }
+click(reSize)
 
-// let wd = document.getElementById('website').clientWidth
-// click(wd)
-// $(document).ready(function () {
-//     $(window).resize(function () {
-//         wd = document.getElementById('').clientWidth
-        
+$(document).ready(function () {
+    function activeTab(ojb) {
+        $('.navbar .li').removeClass('active')
 
-//     })
-// })
+        $(ojb).addClass('active')
+
+        let id = $(ojb).find('a').attr('href')
+
+        $('.body').hide();
+
+        $(id).show()
+    }
+
+    $('.navbar .li').click(function () {
+        activeTab(this)
+        return false
+    })
+
+    activeTab($('.navbar .li:first-child'))
+})

@@ -20,13 +20,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Love+Ya+Like+A+Sister&family=Roboto:ital,wght@0,100;0,300;0,700;1,500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <div class="website" id="website">
-        <header class="menu">
+        <header id="menu" class="menu" value="0">
             <div id="toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -35,21 +38,24 @@
             </div>
 
             <ul class="navbar" id="navbar">
-                <a href="#body">
-                    <li class="nav-item">HOME</li>
-                </a>
-                <a href="#reality">
-                    <li class="nav-item">Thực trạng</li>
-                </a>
-                <a href="#reason">
-                    <li class="nav-item">Nguyên nhân</li>
-                </a>
-                <a href="#consequence">
-                    <li class="nav-item">Hậu quả</li>
-                </a>
-                <a href="#overcome">
-                    <li class="nav-item">Khắc phục</li>
-                </a>
+                <li class="nav-item li">
+                    <a href="#body">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reality">Thực trạng</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reason">Nguyên nhân</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#consequence">Hậu quả</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#overcome">Khắc phục</a>
+                </li>
+                <li class="nav-item li">
+                    <a href="#book-tickets">Đặt vé</a>
+                </li>
             </ul>
         </header>
 
@@ -57,13 +63,28 @@
             <ul class="banner">
                 <li class="img">
                     <img src="/images/pexels-photo-2302802.webp" alt="">
+
+                    <div class="img-text">
+                        <h2>THỰC TRẠNG</h2>
+                        <p>"Ô nhiễm" khiến động vật hoang dã có nguy cơ tuyệt chủng</p>
+                    </div>
                 </li>
                 <li class="img">
                     <img src="/images/pexels-photo-1781933.jpeg" alt="">
+
+                    <div class="img-text">
+                        <h2>NGUYÊN NHÂN</h2>
+                        <p>Con người <br> Công nghiệp khí, khói thải <br>Nạn chặt phá rừng <br></p>
+                    </div>
                 </li>
                 <li class="img">
                     <img src="/images/trees-killed-by-acid-rain-612577196-5c0709edc9e77c00017c0268-16418714298331698130091.webp"
                         alt="">
+
+                    <div class="img-text">
+                        <h2>HẬU QUẢ</h2>
+                        <p>Mưa axit giết chết động vật hoang dã <br> Ô nhiễm nước có hại cho động vật hoang dã</p>
+                    </div>
                 </li>
             </ul>
 
@@ -306,6 +327,65 @@
                     đảm bảo cân bằng sinh thái</p>
 
                 <h3 class="header-guard">Vì một môi trường xanh sạch đẹp</h3>
+            </div>
+        </div>
+
+        <div class="body" id="book-tickets">
+            <div class="banner-banner">
+                <div class="img">
+                    <img src="/images/shutterstock_356640962.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="box-stickets">
+                <div class="stickets">
+                    <img src="/images/vuonxoai.jpg" alt="">
+                    <div class="text-stickets">
+                        <p>Sở thú Vườn Xoài</p>
+                        <p>Giá vé: 85,000 đ/ Người</p>
+                    </div>
+                    <button>Đặt vé</button>
+                </div>
+                <div class="stickets">
+                    <img src="/images/safari.jpg" alt="">
+                    <div class="text-stickets">
+                        <p>Vinpeal Safari</p>
+                        <p>Giá vé: 150,000đ/Người</p>
+                    </div>
+                    <button>Đặt vé</button>
+                </div>
+                <div class="stickets">
+                    <img src="/images/dainam.jpg" alt="">
+                    <div class="text-stickets">
+                        <p>Sở thú Đại Nam </p>
+                        <p>Giá vé: 100,000/Người</p>
+                    </div>
+                    <button>Đặt vé</button>
+                </div>
+                <div class="stickets">
+                    <img src="/images/thaocamvien.png" alt="">
+                    <div class="text-stickets">
+                        <p>Thảo Cầm Viên</p>
+                        <p>Giá vé: 80,000/Người</p>
+                    </div>
+                    <button>Đặt vé</button>
+                </div>
+                <div class="stickets">
+                    <img src="/images/vuonthuhanoi.jpg" alt="">
+                    <div class="text-stickets">
+                        <p>Vườn thú Hà Nội </p>
+                        <p>Giá vé: 50,000/Người</p>
+                    </div>
+                    <button>Đặt vé</button>
+                </div>
+                <div class="stickets">
+                    <img src="/images/muongthanhsafari.jpg" alt="">
+                    <div class="text-stickets">
+                        <p>Khu sinh thái Mường Thanh </p>
+                        <p>Giá vé: 70,000/Người</p>
+                    </div>
+                    <button>Đặt vé</button>
+                </div>
             </div>
         </div>
 

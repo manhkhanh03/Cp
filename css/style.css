@@ -60,6 +60,25 @@
 .banner .img {
     width: 100%;
     height: 100%;
+    position: relative;
+}
+
+.img-text {
+    position: absolute;
+    top: 28%;
+    left: 10%;
+    color: var(--backgr);
+
+}
+
+.img-text h2 {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 38px;
+    padding: 0 0 70px 100px;
+}
+
+.img-text {
+    font-weight: lighter;
 }
 
 .banner .img img {
@@ -218,21 +237,102 @@
     height: 100%;
 }
 
+/* book stickets */
+.banner-banner {
+    width: 100%;
+    height: 638px;
+}
+
+.banner-banner .img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.banner-banner .img img {
+    width: 100%;
+    height: 100%;
+    max-height: 638px;
+}
+
+.box-stickets {
+    margin: 30px 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.stickets {
+    width: 26%;
+    height: 345px;
+}
+
+.stickets img {
+    width: 100%;
+    height: 70%;
+}
+
+.text-stickets {
+    background-color: #F6F2C5;
+    position: relative;
+    top: -30px;
+    border-radius: 16px;
+    height: 80px;
+    padding: 12px 0;
+}
+
+.stickets button {
+    width: 80px;
+    height: 36px;
+    background-color: #F33131;
+    border: none;
+    border-radius: 6px;
+    color: var(--backgr);
+    position: relative;
+    top: -40px;
+    cursor: pointer;
+}
+
+.stickets button:hover {
+    background-color: #fc1d1d;
+}
+
 @media (max-width: 1024px) {
     .menu {
         padding: 4px 12px;
     }
 
     .navbar {
-        width: 62%;
+        width: 70%;
     }
 
     .banner {
         height: 426px;
     }
 
+    .banner-banner {
+        height: 426px;
+    }
+
     .banner .img img {
         max-height: 426px;
+    }
+
+    .banner-banner .img img {
+        max-height: 426px;
+    }
+
+    .stickets {
+        height: 246px;
+    }
+
+    .text-stickets {
+        height: 66px;
+    }
+
+    .text-stickets p {
+        font-size: 12px;
     }
 
     .header-info {
@@ -283,13 +383,22 @@
         padding: 0;
     }
 
-    .navbar {   
+    .menu .img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar {
         display: none;
         background-color: #fff;
         position: absolute;
-        bottom: -127px;
+        bottom: -156px;
         width: 100%;
         text-align: center;
+    }
+
+    .nav-item {
+        padding: 3px 0;
     }
 
     .navbar a {
@@ -300,8 +409,22 @@
         height: 220px;
     }
 
+    .banner-banner {
+        height: 220px;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+        display: none;
+    }
+
     .banner .img img {
         max-height: 220px;
+    }
+
+    .img-text h2 {
+        font-size: 24px;
+        padding: 0 0 20px 20px;
     }
 
     .header-info {
@@ -346,7 +469,7 @@
     }
 
     .footer {
-        height: 344px;
+        height: 290px;
         padding: 20px 0;
     }
 
@@ -359,7 +482,11 @@
         display: none;
     }
 
-    .heading-ft  {
+    .heading-ft {
         font-size: 18px;
+    }
+
+    .stickets {
+        width: 38%;
     }
 }
