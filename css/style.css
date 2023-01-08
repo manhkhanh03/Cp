@@ -132,7 +132,7 @@
 }
 
 .info {
-    width: 80%;
+    width: 60%;
     margin: 10px auto;
 }
 
@@ -141,27 +141,50 @@
 }
 
 .header-info {
-    font-size: 28px;
+    font-size: 38px;
     font-weight: bold;
     text-align: center;
     padding: 60px 0 20px;
 }
 
-.text-info {
-    font-size: 18px;
+.heading-info {
+    font-size: 24px;
+    padding: 20px 0 10px;
 }
 
-.info .img {
-    width: 100%;
-    height: 548px;
-    text-align: center;
+.box-text-img {
+    display: flex;
+    justify-content: space-between;
     margin: 20px 0;
 }
 
-.info .img img {
-    width: 90%;
+.text-info {
+    font-size: 24px;
+    width: 48%;
+}
+
+.text-info2 {
+    width: 100%;
+    font-size: 24px;
+    margin: 32px 0 0;
+}
+
+.info .img {
+    width: 48%;
+    height: 308px;
+    text-align: center;
+}
+
+.info .img img,
+.info .img-img img {
+    width: 100%;
     height: 94%;
     border-radius: 20px;
+}
+
+.info .img-img {
+    width: 80%;
+    margin: auto;
 }
 
 /* chung tay bảo vệ động vật hoang dã */
@@ -172,7 +195,7 @@
     color: var(--backgr);
     background-size: cover;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 40px 0 20px;
 }
 
 .heading-guard {
@@ -339,8 +362,16 @@
         line-height: 1.2;
     }
 
+    .info {
+        width: 80%;
+    }
+
     .info .img {
-        height: 432px;
+        height: 290px;
+    }
+
+    .text-info, .text-info2 {
+        font-size: 22px;
     }
 
     .guard {
@@ -427,12 +458,19 @@
         padding: 0 0 20px 20px;
     }
 
+    .box-text-img {
+        display: block;
+
+    }
+
     .header-info {
         padding: 20px 0 20px;
     }
 
     .info .img {
+        width: 100%;
         height: 220px;
+        margin: 20px 0 30px;
     }
 
     .header-info {
@@ -441,7 +479,12 @@
     }
 
     .text-info {
-        font-size: 16px;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .text-info2 {
+        font-size: 18px;
     }
 
     .text-img {
