@@ -68,6 +68,7 @@
     top: 28%;
     left: 10%;
     color: var(--backgr);
+    font-weight: lighter;
 
 }
 
@@ -77,8 +78,9 @@
     padding: 0 0 70px 100px;
 }
 
-.img-text {
-    font-weight: lighter;
+.img-text p {
+    font-size: 24px;
+    width: 80%;
 }
 
 .banner .img img {
@@ -132,7 +134,7 @@
 }
 
 .info {
-    width: 60%;
+    width: 90%;
     margin: 10px auto;
 }
 
@@ -154,36 +156,43 @@
 
 .box-text-img {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px 0;
 }
 
 .text-info {
-    font-size: 24px;
+    font-size: 20px;
     width: 48%;
 }
 
 .text-info2 {
     width: 100%;
-    font-size: 24px;
+    font-size: 20px;
     margin: 32px 0 0;
 }
 
 .info .img {
-    width: 48%;
-    height: 308px;
+    width: 38%;
+    height: 307px;
     text-align: center;
+}
+
+.info .img-single {
+    margin: 20px auto 0;
+    width: 50%;
+    height: 370px;
 }
 
 .info .img img,
 .info .img-img img {
     width: 100%;
-    height: 94%;
+    height: 88%;
     border-radius: 20px;
 }
 
 .info .img-img {
-    width: 80%;
+    width: 68%;
+    height: 554px;
     margin: auto;
 }
 
@@ -195,7 +204,6 @@
     color: var(--backgr);
     background-size: cover;
     text-align: center;
-    margin: 40px 0 20px;
 }
 
 .heading-guard {
@@ -276,6 +284,22 @@
     width: 100%;
     height: 100%;
     max-height: 638px;
+}
+
+.address {
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.heading-addr {
+    font-size: 30px;
+}
+
+.text-addr {
+    margin: 20px auto;
+    width: 80%;
+    font-size: 22px;
 }
 
 .box-stickets {
@@ -370,7 +394,8 @@
         height: 290px;
     }
 
-    .text-info, .text-info2 {
+    .text-info,
+    .text-info2 {
         font-size: 22px;
     }
 
@@ -402,7 +427,7 @@
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 560px) {
     #toggle {
         margin: 0 26px;
         display: block;
@@ -437,7 +462,7 @@
     }
 
     .banner {
-        height: 220px;
+        height: 290px;
     }
 
     .banner-banner {
@@ -450,12 +475,17 @@
     }
 
     .banner .img img {
-        max-height: 220px;
+        min-height: 290px;
+        max-height: 290px;
     }
 
     .img-text h2 {
         font-size: 24px;
         padding: 0 0 20px 20px;
+    }
+
+    .img-text p {
+        font-size: 16px;
     }
 
     .box-text-img {
@@ -465,6 +495,7 @@
 
     .header-info {
         padding: 20px 0 20px;
+        font-size: 22px;
     }
 
     .info .img {
@@ -491,8 +522,13 @@
         font-size: 10px;
     }
 
+    .info .img-img {
+        width: 100%;
+        height: 220px;
+    }
+
     .guard {
-        height: 260px;
+        height: 290px;
     }
 
     .heading-guard {
@@ -531,5 +567,13 @@
 
     .stickets {
         width: 38%;
+    }
+
+    .heading-addr {
+        font-size: 24px;
+    }
+
+    .text-addr {
+        font-size: 16px;
     }
 }
