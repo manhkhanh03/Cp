@@ -24,8 +24,8 @@
 }
 
 .menu .img {
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 62px;
 }
 
 .menu .img img {
@@ -302,6 +302,11 @@
     font-size: 22px;
 }
 
+video {
+    height: 304px;
+
+}
+
 .box-stickets {
     margin: 30px 0 0;
     display: flex;
@@ -440,8 +445,8 @@
     }
 
     .menu .img {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 52px;
     }
 
     .navbar {
